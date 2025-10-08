@@ -4,6 +4,7 @@ namespace App\Enums;
 
 enum BookLanguage: string
 {
+    // Book Language Item
     case ENGLISH = 'English';
     case INDONESIA = 'Indonesia';
     case JAPAN = 'Jepang';
