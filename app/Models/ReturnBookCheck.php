@@ -15,4 +15,9 @@ class ReturnBookCheck extends Model
             'condition' => ReturnBookCondition::class,
         ];
     }
+
+    public function returnBook()
+    {
+        return $this->belongsTo(ReturnBook::class);
+    }
 }

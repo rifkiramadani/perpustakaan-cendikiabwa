@@ -54,4 +54,9 @@ class User extends Authenticatable
             'gender' => UserGender::class //casting enum agar hanya value enum itu yang bisa di masukkan
         ];
     }
+
+    public function loans()
+    {
+        return $this->hasMany(Loan::class);
+    }
 }
