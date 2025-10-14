@@ -10,6 +10,7 @@ class Loan extends Model
 
     public function casts(): array
     {
+        //Casting agar date bisa di format
         return [
             'loan_date' => 'date',
             'due_date' => 'date'
