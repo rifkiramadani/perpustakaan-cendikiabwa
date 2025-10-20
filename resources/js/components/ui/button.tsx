@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+                "text-white bg-gradient-to-r from-gray-700 via-gray-800 to-gray-800",
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40",
         outline:
@@ -18,12 +18,18 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+            link: "text-orange-500 underline-offset-4 hover:underline",
+            orange: "text-white bg-gradient-to-r from-orange-500 via-orange-500 to-orange-500",
+            red: "text-white bg-gradient-to-r from-red-500 via-red-500 to-red-500",
+            blue: "text-white bg-gradient-to-r from-blue-500 via-blue-500 to-blue-500",
+            green: "text-white bg-gradient-to-r from-green-500 via-green-500 to-green-500",
+            purple: "text-white bg-gradient-to-r from-purple-500 via-purple-500 to-purple-500"
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
         sm: "h-8 rounded-md px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+          xl: "h-12 rounded-xl px-8",
         icon: "size-9",
       },
     },
