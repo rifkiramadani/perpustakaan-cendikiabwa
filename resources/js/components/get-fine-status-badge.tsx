@@ -2,7 +2,11 @@ import { FINEPAYMENTSTATUS } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 
 
-export default function GetFineStatusBadge({ status }) {
+type GetFineStatusBadgeProps = {
+    status: string
+}
+
+export default function GetFineStatusBadge({ status }: GetFineStatusBadgeProps) {
     const { PENDING, SUCCESS, FAILED } = FINEPAYMENTSTATUS;
 
     let badge, text;
